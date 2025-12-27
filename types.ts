@@ -20,7 +20,7 @@ export interface House {
   mortgagePayment: number;
   bank: string;
   mortgageBalance: number;
-  paymentDate: number; // Day of month
+  paymentDate: number;
   insuranceAmount: number;
   insuranceRenewalDate: string;
   maintenanceLog?: MaintenanceEntry[];
@@ -38,15 +38,15 @@ export interface Tenant {
   phone: string;
   job?: string;
   moveInDate: string;
-  moveInTime?: string; // Specific time for handover
+  moveInTime?: string;
   durationMonths: number;
   moveOutDate: string;
   securityDeposit: number;
   baseRent: number;
   hasGarage: boolean;
   garagePrice: number;
-  monthlyRent: number; // Calculated total: baseRent + garagePrice
-  rentDueDate: number; // Day of month rent is due
+  monthlyRent: number;
+  rentDueDate: number;
   houseId: string;
   roomId: string;
   isActive: boolean;
@@ -59,7 +59,7 @@ export interface Payment {
   method: string;
   amount: number;
   date: string;
-  dueMonth: string; // e.g. "2023-10"
+  dueMonth: string;
   purposes: PaymentPurpose[];
   isProrated?: boolean;
   proratedDays?: number;
@@ -111,4 +111,10 @@ export interface AppState {
   showings: Showing[];
   lentItems: LentItem[];
   leads: Lead[];
+  cloud?: {
+    spreadsheetId: string | null;
+    lastSync: string | null;
+    isSyncing: boolean;
+    userEmail: string | null;
+  };
 }

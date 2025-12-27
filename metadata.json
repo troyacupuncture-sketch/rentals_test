@@ -1,5 +1,5 @@
 {
-  "name": "PropTrack Pro Cloud",
-  "description": "Multi-user property management suite with Google Sheets real-time synchronization.",
+  "name": "PropTrack Pro Streamlit",
+  "description": "Property Management SaaS with Google Sheets backend and AI insights",
   "requestFramePermissions": []
 }
