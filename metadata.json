@@ -1,5 +1,5 @@
 {
-  "name": "PropTrack Pro",
-  "description": "A comprehensive property management suite for landlords to track rent, tenants, house expenses, maintenance, and profitability with visual payment status indicators.",
+  "name": "PropTrack Pro Cloud",
+  "description": "Multi-user property management suite with Google Sheets real-time synchronization.",
   "requestFramePermissions": []
 }
